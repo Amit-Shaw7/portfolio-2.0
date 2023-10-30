@@ -5,8 +5,8 @@ type Props = {}
 
 const Hero = (props: Props) => {
   return (
-    <section id="#hero">
-      <div className="w-full xl:px-44 lg:px-12 px-4 py-4 font-nunito">
+    <section id="#hero" className='h-[80vh]'>
+      <div className="w-full py-4 font-nunito">
         <div className='w-full'>
           <p className='text-xl text-highlight font-roboto'>Hii , I am</p>
           <p className='text-4xl md:text-5xl lg:text-5xl xl:text-7xl font-bold mt-5'>Amit Kumar Shaw</p>
