@@ -50,3 +50,24 @@ body,
   font-family: sans-serif; /* Optional: Adjust font family if needed */
   line-height: 1; /* Optional: Adjust line height if needed */
 }
+
+
+.tooltip-text {
+  width: max-content;
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  /* At the bottom of the tooltip */
+  /* left: 50%; */
+  /* margin-left: -5px; */
+  border-width: 5px;
+  border-style: solid;
+  border-color: gray;
+}
+
+.tooltip:hover .tooltip-text {
+  display: flex;
+}
