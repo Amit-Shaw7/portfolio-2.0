@@ -1,9 +1,6 @@
 import type { Metadata } from 'next'
-import { Roboto_Mono } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
-
-const font = Roboto_Mono({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Amit',
@@ -17,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`bg-bg text-white ${font.className}`}>
+      <body className={`bg-bg text-white`}>
         <Navbar />
         {children}
       </body>

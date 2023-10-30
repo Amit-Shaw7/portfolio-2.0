@@ -1,5 +1,6 @@
 import Container from '@/components/Container'
 import Wrapper from '@/components/Wrapper'
+import About from '@/sections/About'
 import Hero from '@/sections/Hero'
 import Image from 'next/image'
 
@@ -9,6 +10,7 @@ export default function Home() {
       <Container>
         <Wrapper>
           <Hero />
+          <About />
         </Wrapper>
       </Container>
     </main>

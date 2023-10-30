@@ -1,6 +1,5 @@
 import { socialLinks } from '@/constants/socialLinks'
 import React from 'react'
-import { FaGithub } from 'react-icons/fa'
 
 const Wrapper = ({
     children
@@ -10,6 +9,7 @@ const Wrapper = ({
     const email = "amitkumar8017392@gmail.com";
     return (
         <div className='w-full mt-[150px]'>
+            {/* -------------------------- left side social links -------------------------- */}
             <div
                 id='social-links'
                 aria-label='social-links'
@@ -20,7 +20,7 @@ const Wrapper = ({
                         socialLinks.map((item) => (
                             <a
                                 key={item.name}
-                                className='hover:text-highlight'
+                                className='hover:text-highlight hover:-translate-y-1 text-unselected transition duration-300 text-lg'
                                 href={item.url}
                             >
                                 <item.icon />
@@ -31,6 +31,8 @@ const Wrapper = ({
                 <div className='h-40 w-[1px] bg-unselected'></div>
             </div>
 
+
+            {/* -------------------------- hero component -------------------------- */}
             <div
                 id='main-content'
                 aria-label='main-content'
@@ -38,6 +40,8 @@ const Wrapper = ({
                 {children}
             </div>
 
+
+            {/* -------------------------- right side mail to link -------------------------- */}
             <div
                 id='mail-links'
                 aria-label='mail-links'
