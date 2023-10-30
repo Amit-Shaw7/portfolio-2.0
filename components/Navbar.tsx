@@ -34,25 +34,24 @@ const Navbar = (props: Props) => {
     return (
         <>
             <nav className={`
-            font-roboto
-            fixed 
-            w-full 
-            top-0 
-            z-0
-            transition-all
-            duration-300 
-            flex items-center 
-            justify-between 
-            px-2 sm:px-4 md:px-12 
-            backdrop-filter 
-            backdrop-blur-md
-            drop-shadow-lg
-            bg-transparent
-            text-unselected
-            // ${scrolled ? 'bg-highlight' : 'bg-transparent'}
-            ${scrolled ? 'h-[60px]' : 'h-[100px]'} 
-            ${scrolled ? 'shadow-sm shadow-highlight-200/10' : 'h-[100px]'} 
-        `}>
+                font-roboto
+                fixed 
+                w-full 
+                top-0 
+                z-50
+                transition-all
+                duration-300 
+                flex items-center 
+                justify-between 
+                px-2 sm:px-4 md:px-12 
+                backdrop-filter 
+                backdrop-blur-md
+                drop-shadow-lg
+                bg-transparent
+                text-unselected
+                ${scrolled ? 'h-[60px]' : 'h-[100px]'} 
+                ${scrolled ? 'shadow-sm shadow-highlight-200/10' : 'h-[100px]'} 
+            `}>
                 <Logo scrolled={scrolled} />
                 <div className='hidden md:flex'>
                     <NavLinks
