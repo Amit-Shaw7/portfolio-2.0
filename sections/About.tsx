@@ -4,7 +4,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='py-20'>
+    <section id="#About" className='py-20'>
       <Heading index={1} title='About' />
       <div className='px-4 flex justify-between md:flex-row flex-col gap-5 w-full h-auto'>
         <div className='w-full md:w-[60%] lg:w-[60%] flex flex-col gap-7'>
@@ -84,7 +84,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
