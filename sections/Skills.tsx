@@ -7,7 +7,7 @@ const Skills = () => {
     return (
         <div className='py-20'>
             <Heading title='Skills' index={2} />
-            <div className='w-full flex justify-center py-20'>
+            <div className='w-full flex justify-center pb-20'>
                 <div className='grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 px-4 gap-10'>
                     {
                         skillArr.map((skill) => (
