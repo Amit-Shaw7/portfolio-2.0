@@ -11,7 +11,7 @@ const Skills = () => {
                 <div className='grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 px-4 gap-10'>
                     {
                         skillArr.map((skill) => (
-                            <div key={skill.id} className='p-5 border border-highlight rounded-full w-max h-max relative'>
+                            <div key={skill.name} className='p-5 border border-highlight rounded-full w-max h-max relative'>
 
                                 <Image
                                     src={`/assets/skills/${skill?.img}`}

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
+import TechnologiesUsed from './TechnologiesUsed'
 
 type Props = {
     index: number,
@@ -18,7 +19,6 @@ const Project = (props: Props) => {
     return (
         <>
             <div key={props.index} className={`md:flex hidden ${props.index % 2 === 0 ? "flex-row" : "flex-row-reverse"} h-[350px]`}>
-                {/* <a href=""> */}
                 <div className='relative flex items-center justify-center h-[330px] w-[60%]'>
                     <div
                         className='
@@ -48,7 +48,6 @@ const Project = (props: Props) => {
                         object-cover
                     '/>
                 </div>
-                {/* </a> */}
 
                 <div className={`font-nunito w-[40%] rounded-md ${props.index % 2 === 0 ? "-ml-10" : "-mr-10"} relative z-20 py-5`}>
                     <div className='h-full w-full flex flex-col  justify-between'>
@@ -146,7 +145,7 @@ const Project = (props: Props) => {
                     '
                     >
 
-                        <div className='p-2 md:p-10 justify-around flex gap-5 flex-col  min-h-[400px]'>
+                        <div className='p-4 sm:p-12 justify-around flex gap-5 flex-col  min-h-[400px]'>
                             <div className='flex flex-col gap-3'>
                                 <h5 className='text-highlight font-semibold font-roboto'>Featured Project</h5>
                                 <h3 className='text-white text-3xl font-bold'>{props.project.title}</h3>
@@ -156,18 +155,7 @@ const Project = (props: Props) => {
                                 {props.project.desc}
                             </p>
 
-                            <div className='flex items-center gap-3'>
-                                {props.project.skillUsed.map((skill) => (
-                                    <Image
-                                        key={skill}
-                                        src={`/assets/skills/${skill}.svg`}
-                                        alt={skill}
-                                        width={20}
-                                        height={20}
-                                        className='cursor-pointer'
-                                    />
-                                ))}
-                            </div>
+                            <TechnologiesUsed technologies={props.project.skillUsed}/>
 
 
                             <div className='flex gap-5 mx-1'>

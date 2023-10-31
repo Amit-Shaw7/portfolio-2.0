@@ -4,7 +4,7 @@ import About from '@/sections/About'
 import Hero from '@/sections/Hero'
 import FeaturedProjects from '@/sections/FeaturedProjects'
 import Skills from '@/sections/Skills'
-import Image from 'next/image'
+import OtherProjects from '@/sections/OtherProjects'
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
           <About />
           <Skills />
           <FeaturedProjects />
+          <OtherProjects />
         </Wrapper>
       </Container>
     </main>
