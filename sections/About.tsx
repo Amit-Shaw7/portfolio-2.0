@@ -8,7 +8,6 @@ const About = () => {
       <Heading index={1} title='About' />
       <div className='px-4 flex justify-between md:flex-row flex-col gap-5 w-full h-auto'>
         <div className='w-full md:w-[60%] lg:w-[60%] flex flex-col gap-7'>
-
           <p className='text-slate-400 text-md font-nunito leading-7'>
             Hi, I&apos;m Amit Kumar Shaw, and I am a
             <span className='text-highlight font-semibold'> Full Stack Web Developer</span>.
@@ -17,11 +16,11 @@ const About = () => {
             which is a part of a group of tools in
             <span className='text-highlight font-semibold'> MERN Stack</span>,
             and I also know a bit about
-            <span className='text-highlight font-semibold'>Next Js</span>.
+            <span className='text-highlight font-semibold'> Next Js</span>.
             I finished my BCA (that&apos;s
-            <span className='text-highlight font-semibold'> Bachelor of Computer Applications)</span>
+            <span className='text-highlight font-semibold'> Bachelor of Computer Applications) </span>
             at Heritage Academy in 2022 with a grade of
-            <span className='text-highlight font-semibold'>9.0</span>.
+            <span className='text-highlight font-semibold'> 9.0</span>.
           </p>
 
           <p className='text-slate-400 text-md font-nunito leading-7'>
