@@ -25,11 +25,14 @@ const About = () => {
           </p>
 
           <p className='text-slate-400 text-md font-nunito leading-7'>
-            I really like making things for the internet. I&apos;ve been learning how to build websites and web apps for a while now. I find it interesting and enjoy making web pages that look good and work well for the people who use them.
+            I really like making things for the internet. 
+            I&apos;ve been learning how to build websites and web apps for a while now. 
+            I find it interesting and enjoy making web pages that look good and work well for the people who use them.
           </p>
 
           <p className='text-slate-400 text-md font-nunito leading-7'>
-            I&apos;m good at building cool stuffs, and working with other people to finish projects. I&apos;m always trying to learn new stuff in web development because things change quickly and I want to stay up to date.
+            I&apos;m good at building cool stuffs, and working with other people to finish projects. 
+            I&apos;m always trying to learn new stuff in web development because things change quickly and I want to stay up to date.
             I&apos;m excited about building things for the web and I&apos;m always ready for new challenges in making things for the web.
           </p>
         </div>
@@ -37,29 +40,31 @@ const About = () => {
         <div className='h-[300px] w-full md:w-[40%] lg:w-[40%] xl:w-[252px] flex items-center md:items-start justify-center'>
           <div className='w-[252px] h-[252px] md:h-[80%] lg:h-[80%]  relative'>
             <Overlay className='
-              peer
-              z-20
-              opacity-40 
-              hover:opacity-0 
-              hover:-translate-x-1 
-              hover:-translate-y-1 
-              bg-highlight 
-              rounded-sm'
+                peer
+                z-20
+                opacity-40 
+                hover:opacity-0 
+                hover:-translate-x-1 
+                hover:-translate-y-1 
+                bg-highlight 
+                rounded-sm
+              '
             />
 
             <div className='
-              absolute 
-              top-3 
-              left-3 
-              w-full 
-              h-full 
-              border 
-              border-highlight-200 
-              rounded-sm
-              peer-hover:translate-x-1 
-              peer-hover:translate-y-1 
-              transition 
-              duration-300'
+                absolute 
+                top-3 
+                left-3 
+                w-full 
+                h-full 
+                border 
+                border-highlight-200 
+                rounded-sm
+                peer-hover:translate-x-1 
+                peer-hover:translate-y-1 
+                transition 
+                duration-300
+              '
             ></div>
 
             <Image
