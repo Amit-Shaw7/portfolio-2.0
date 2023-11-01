@@ -6,7 +6,7 @@ type Props = {
 const Tabs = (props: Props) => {
 
   return (
-    <div className='h-full w-full flex flex-row md:flex-col'>
+    <div className='h-full w-full flex gap-1 flex-row md:flex-col'>
       {props.children}
     </div>
   )

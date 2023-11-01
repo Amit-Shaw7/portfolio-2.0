@@ -9,7 +9,7 @@ type Props = {
 const WorkDetails = (props: Props) => {
     const data = workExperience.find((experience) => experience.org === props.company);
     return (
-        <div className='flex flex-col gap-5 font-nunito'>
+        <div className='flex flex-col gap-5 font-nunito '>
             <div className='flex flex-col gap-2'>
                 <h3 className='text-2xl'>
                     <span className='text-white'>{data?.jobTitle}</span>
@@ -20,8 +20,8 @@ const WorkDetails = (props: Props) => {
 
             <ul className='ml-4 list-disc flex flex-col gap-2 text-unselected justify-start items-start text-md'>
                 {
-                    data?.responsibilities.map((responsibility, index) => (
-                        <li key={responsibility} className='fle items-start'>
+                    data?.responsibilities.map((responsibility) => (
+                        <li key={responsibility} className='flex items-start'>
                             {responsibility}
                         </li>
                     ))

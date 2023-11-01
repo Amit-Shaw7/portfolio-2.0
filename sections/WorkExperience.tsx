@@ -15,7 +15,7 @@ const WorkExperience = () => {
         <section id='#experience' className='py-20'>
             <Heading title="Where I've Worked" index={5} />
 
-            <div className='px-4 flex md:flex-row flex-col gap-5 w-[90%] h-[50vh]'>
+            <div className='px-4 flex md:flex-row flex-col gap-8 w-full min-h-[50vh] md:min-h-full'>
                 <div className='w-[300px]'>
                     <Tabs>
                         {

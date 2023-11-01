@@ -15,7 +15,7 @@ const Tab = (props: Props) => {
                 px-4 
                 py-2 
                  cursor-pointer
-                ${props.selected ? "md:border-l-2 border-b-2  md:border-l-highlight border-b-highlight" : "md:border-l-2 border-b-gray md:border-l-gray"} 
+                ${props.selected ? "border-b-2 border-b-highlight md:border-b-0 md:border-l-2 md:border-l-highlight" : "border-b-2 md:border-l-2 md:border-b-0 border-b-gray md:border-l-gray"} 
                 hover:bg-highlight 
                 hover:bg-opacity-10 
                 transition 
@@ -24,7 +24,7 @@ const Tab = (props: Props) => {
                 ${props.selected ? "text-highlight" :"text-gray"}
             `}
         >
-            <span>{props.label}</span>
+            <p className='flex'>{props.label}</p>
         </div>
     )
 }
