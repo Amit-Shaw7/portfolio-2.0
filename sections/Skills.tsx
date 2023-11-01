@@ -1,4 +1,5 @@
 import Heading from '@/components/Heading'
+import Overlay from '@/components/Overlay'
 import { skillArr } from '@/constants/skills'
 import Image from 'next/image'
 import React from 'react'
@@ -23,7 +24,14 @@ const Skills = () => {
                                 />
 
                                 {/* <span className='-top-12 uppercase  bg-bg border border-highlight p-1 rounded-md absolute text-unselected peer-hover:flex'>Javascript</span> */}
-                                <div className='absolute inset-0 h-full w-full bg-highlight-200 opacity-40 rounded-full transition duration-300 hover:opacity-0'></div>
+                                <Overlay
+                                    className='
+                                        bg-highlight-200 
+                                        opacity-40 
+                                        rounded-full  
+                                        hover:opacity-0
+                                    '
+                                />
                             </div>
                         ))
                     }

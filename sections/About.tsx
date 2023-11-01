@@ -1,4 +1,5 @@
 import Heading from '@/components/Heading'
+import Overlay from '@/components/Overlay'
 import Image from 'next/image'
 import React from 'react'
 
@@ -35,22 +36,16 @@ const About = () => {
 
         <div className='h-[300px] w-full md:w-[40%] lg:w-[40%] xl:w-[252px] flex items-center md:items-start justify-center'>
           <div className='w-[252px] h-[252px] md:h-[80%] lg:h-[80%]  relative'>
-            <div className='
+            <Overlay className='
               peer
-              absolute 
-              inset-0 
               z-20
               opacity-40 
               hover:opacity-0 
               hover:-translate-x-1 
               hover:-translate-y-1 
-              transition 
-              duration-300 
               bg-highlight 
-              w-full 
-              h-full 
               rounded-sm'
-            ></div>
+            />
 
             <div className='
               absolute 

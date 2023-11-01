@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import TechnologiesUsed from './TechnologiesUsed'
+import Overlay from './Overlay'
 
 type Props = {
     index: number,
@@ -19,22 +20,15 @@ const Project = (props: Props) => {
     return (
         <>
             <div key={props.index} className={`md:flex hidden ${props.index % 2 === 0 ? "flex-row" : "flex-row-reverse"} h-[350px]`}>
-                <div className='relative flex items-center justify-center h-[330px] w-[60%]'>
-                    <div
+                <div className='relative flex items-center justify-center h-[340px] w-[60%]'>
+                    <Overlay
                         className='
-                        absolute 
-                        inset-0 
-                        z-20
-                        opacity-40 
-                        hover:opacity-0 
-                        transition 
-                        duration-300 
-                        bg-highlight 
-                        w-full 
-                        h-full 
-                        rounded-sm
-                    '>
-                    </div>
+                            opacity-40 
+                            hover:opacity-0 
+                            bg-highlight 
+                            rounded-sm
+                        '
+                    />
                     <Image
                         src={`/assets/projects/${props.project.img}`}
                         height={400}
@@ -42,11 +36,12 @@ const Project = (props: Props) => {
                         layout='responsive'
                         alt='Amit Kumar Shaw'
                         className='
-                        rounded-sm
-                        transition
-                        duration-300
-                        object-cover
-                    '/>
+                            rounded-sm
+                            transition
+                            duration-300
+                            object-cover
+                        '
+                    />
                 </div>
 
                 <div className={`font-nunito w-[40%] rounded-md ${props.index % 2 === 0 ? "-ml-10" : "-mr-10"} relative z-20 py-5`}>
@@ -133,16 +128,16 @@ const Project = (props: Props) => {
                     </div>
                     <div
                         className='
-                        absolute 
-                        inset-0 
-                        transition 
-                        duration-300 
-                        bg-[#0D2034]
-                        opacity-[95%] 
-                        w-full 
-                        h-full 
-                        rounded-sm
-                    '
+                            absolute 
+                            inset-0 
+                            h-full 
+                            w-full 
+                            transition 
+                            duration-300 
+                            rounded-sm
+                            bg-[#0D2034]
+                            opacity-[95%] 
+                        '
                     >
 
                         <div className='p-4 sm:p-12 justify-around flex gap-5 flex-col  min-h-[400px]'>
@@ -155,7 +150,7 @@ const Project = (props: Props) => {
                                 {props.project.desc}
                             </p>
 
-                            <TechnologiesUsed technologies={props.project.skillUsed}/>
+                            <TechnologiesUsed technologies={props.project.skillUsed} />
 
 
                             <div className='flex gap-5 mx-1'>
@@ -173,8 +168,6 @@ const Project = (props: Props) => {
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </>
     )
