@@ -1,11 +1,13 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Logo = ({ scrolled }: { scrolled: boolean }) => {
     return (
-        <div
+        <Link
             id="logo"
             className='w-max'
+            href="/"
         >
             <Image
                 className='cursor-pointer transition-all duration-200'
@@ -14,7 +16,7 @@ const Logo = ({ scrolled }: { scrolled: boolean }) => {
                 src="/logo/logo-with-border-cropped-transparent.png"
                 alt="logo"
             />
-        </div>
+        </Link>
     )
 }
 

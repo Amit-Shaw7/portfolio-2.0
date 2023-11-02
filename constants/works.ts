@@ -1,4 +1,4 @@
-export const workExperience = [
+export const works = [
     {
         jobTitle: "Frontend End Web Developer Intern",
         technologiesUsed: ["react", "mui", "nodejs", "expressjs", "mongodb"],

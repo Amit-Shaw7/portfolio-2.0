@@ -9,7 +9,7 @@ type Props = {
 const NavLinks = (props: Props) => {
     return (
         <>
-            <div
+            <ul
                 id="links"
                 className={`
                     flex
@@ -23,7 +23,7 @@ const NavLinks = (props: Props) => {
                 `}>
                 {
                     navLinks?.map((navItem, idx) => (
-                        <div
+                        <li
                             key={navItem.title}
                             className='p-1'
                         >
@@ -39,12 +39,12 @@ const NavLinks = (props: Props) => {
                                     {navItem.title}
                                 </span>
                             </a>
-                        </div>
+                        </li>
                     ))
                 }
 
                 <Button fontSize={props.mobileView ? "1rem" : "text-sm"} fullWidth={true} title='Resume' />
-            </div>
+            </ul>
         </>
     )
 }

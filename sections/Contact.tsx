@@ -4,7 +4,7 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <section id="#contact" className='py-20'>
+        <section id="contact" className='py-20'>
             <Heading title="What's Next?" index={5} />
             <div className='flex items-center flex-col gap-7'>
                 <h3 className='text-5xl font-extrabold text-highlight font-roboto'>Get in Touch</h3>

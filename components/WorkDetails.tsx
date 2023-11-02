@@ -1,5 +1,5 @@
 import React from 'react'
-import { workExperience } from '@/constants/workExperience'
+import { works } from '@/constants/works'
 import { BiSolidRightArrow } from 'react-icons/bi'
 
 type Props = {
@@ -7,7 +7,7 @@ type Props = {
 }
 
 const WorkDetails = (props: Props) => {
-    const data = workExperience.find((experience) => experience.org === props.company);
+    const data = works.find((work) => work.org === props.company);
     return (
         <div className='flex flex-col gap-5 font-nunito '>
             <div className='flex flex-col gap-2'>

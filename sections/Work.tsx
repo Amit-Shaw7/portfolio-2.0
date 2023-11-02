@@ -3,28 +3,28 @@ import Heading from '@/components/Heading'
 import WorkDetails from '@/components/WorkDetails';
 import Tab from '@/components/tabs/Tab'
 import Tabs from '@/components/tabs/Tabs'
-import { workExperience } from '@/constants/workExperience';
+import { works } from '@/constants/works';
 import React, { useState } from 'react'
 
-const WorkExperience = () => {
-    const [selectedTab, setSelectedTab] = useState(workExperience[0].org);
+const Work = () => {
+    const [selectedTab, setSelectedTab] = useState(works[0].org);
     const handleSelectedTabs = (value: string) => {
         setSelectedTab(value);
     }
     return (
-        <section id='#experience' className='py-20'>
+        <section id='work' className='py-20'>
             <Heading title="Where I've Worked" index={5} />
 
             <div className='px-4 flex md:flex-row flex-col gap-8 w-full min-h-[50vh] md:min-h-full'>
                 <div className='w-[300px]'>
                     <Tabs>
                         {
-                            workExperience.map((experience) => (
+                            works.map((work) => (
                                 <Tab
-                                    key={experience.org}
-                                    onClick={() => handleSelectedTabs(experience.org)}
-                                    selected={selectedTab === experience.org}
-                                    label={experience.org}
+                                    key={work.org}
+                                    onClick={() => handleSelectedTabs(work.org)}
+                                    selected={selectedTab === work.org}
+                                    label={work.org}
                                 />
                             ))
                         }
@@ -40,4 +40,4 @@ const WorkExperience = () => {
     )
 }
 
-export default WorkExperience
+export default Work

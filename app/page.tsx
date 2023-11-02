@@ -5,7 +5,7 @@ import Hero from '@/sections/Hero'
 import FeaturedProjects from '@/sections/FeaturedProjects'
 import Skills from '@/sections/Skills'
 import OtherProjects from '@/sections/OtherProjects'
-import WorkExperience from '@/sections/WorkExperience'
+import Work from '@/sections/Work'
 import Contact from '@/sections/Contact'
 import Footer from '@/components/Footer'
 
@@ -19,7 +19,7 @@ export default function Home() {
           <Skills />
           <FeaturedProjects />
           <OtherProjects />
-          <WorkExperience />
+          <Work />
           <Contact />
           <Footer/>
         </Wrapper>
