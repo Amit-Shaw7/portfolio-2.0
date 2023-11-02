@@ -9,7 +9,7 @@ const Contact = () => {
             <div className='flex items-center flex-col gap-7'>
                 <h3 className='text-5xl font-extrabold text-highlight font-roboto'>Get in Touch</h3>
                 <p className='text-lg text-center text-unselected font-nunito w-[250px] md:w-[600px]'>
-                    I am looking for an opportunity So , if you wanna give me that or have any question or just wanna say hi
+                    I am looking for an oppertunity So , if you wanna give me that or have any question or just wanna say hi
                     you can contact me through mail by clicking the button below.
                 </p>
 

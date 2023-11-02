@@ -3,6 +3,7 @@ import React from 'react'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import TechnologiesUsed from './TechnologiesUsed'
 import Overlay from './Overlay'
+import Icon from './Icon'
 
 type Props = {
     index: number,
@@ -101,16 +102,18 @@ const Project = (props: Props) => {
                             ${props.index % 2 === 0 ? "self-end" : "self-start"}
                         `}
                         >
-                            <a
+                            <Icon
+                                size='medium'
+                                href={props.project.githubURL}
                                 target='_blank'
-                                href={props.project.githubURL}>
-                                <FiGithub />
-                            </a>
-                            <a
+                                icon={FiGithub}
+                            />
+                            <Icon
+                                size='medium'
+                                href={props.project.siteURL}
                                 target='_blank'
-                                href={props.project.siteURL}>
-                                <FiExternalLink />
-                            </a>
+                                icon={FiExternalLink}
+                            />
                         </div>
                     </div>
                 </div>
@@ -154,16 +157,18 @@ const Project = (props: Props) => {
 
 
                             <div className='flex gap-5 mx-1'>
-                                <a
+                                <Icon
+                                    size='medium'
+                                    href={props.project.githubURL}
                                     target='_blank'
-                                    href={props.project.githubURL}>
-                                    <FiGithub className='text-lg' />
-                                </a>
-                                <a
+                                    icon={FiGithub}
+                                />
+                                <Icon
+                                    size='medium'
+                                    href={props.project.siteURL}
                                     target='_blank'
-                                    href={props.project.siteURL}>
-                                    <FiExternalLink className='text-xl' />
-                                </a>
+                                    icon={FiExternalLink}
+                                />
                             </div>
                         </div>
                     </div>

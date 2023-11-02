@@ -1,5 +1,6 @@
 import { socialLinks } from '@/constants/socialLinks'
 import React from 'react'
+import Icon from './Icon';
 
 const Wrapper = ({
     children
@@ -18,13 +19,13 @@ const Wrapper = ({
                 <div className='flex justify-end gap-5 flex-col px-2'>
                     {
                         socialLinks.map((item) => (
-                            <a
+                            <Icon
+                                size='large'
                                 key={item.name}
-                                className='hover:text-highlight hover:-translate-y-1 text-unselected transition duration-300 text-lg'
                                 href={item.url}
-                            >
-                                <item.icon />
-                            </a>
+                                icon={item.icon}
+                                target='_blank'
+                            />
                         ))
                     }
                 </div>
