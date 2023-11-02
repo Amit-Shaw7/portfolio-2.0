@@ -1,14 +1,14 @@
 import React from 'react'
 
 type Props = {
-    title: string,
     fullWidth?: boolean,
     fontSize?: string
     px?: string,
-    size? : 'small' | 'medium' | 'large'
+    size? : 'small' | 'medium' | 'large',
+    children : React.ReactNode
 }
 
-const Button = ({ title, fullWidth, fontSize, px , size }: Props) => {
+const Button = ({ fullWidth, fontSize, px , size , children }: Props) => {
     return (
         <div className={`
             bg-highlight 
@@ -38,7 +38,7 @@ const Button = ({ title, fullWidth, fontSize, px , size }: Props) => {
                 ${size === "large" && "text-lg py-4 px-8"}
             `}
             >
-                {title}
+                {children}
             </button>
         </div>
     )

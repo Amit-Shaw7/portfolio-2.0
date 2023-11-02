@@ -10,15 +10,15 @@ const NavLinks = (props: Props) => {
     return (
         <>
             <ul
-                id="links"
+                id='links'
                 className={`
                     flex
                     font-roboto
                     ${props.mobileView
                         ?
-                        "text-xl flex-col items-center gap-12"
+                        'text-xl flex-col items-center gap-12'
                         :
-                        "text-[13.5px] flex-row items-center gap-5"
+                        'text-[13.5px] flex-row items-center gap-5'
                     }
                 `}>
                 {
@@ -43,7 +43,14 @@ const NavLinks = (props: Props) => {
                     ))
                 }
 
-                <Button fontSize={props.mobileView ? "1rem" : "text-sm"} fullWidth={true} title='Resume' />
+                <a download href='/assets/amitKumarShawResume.pdf'>
+                    <Button
+                        fontSize={props.mobileView ? '1rem' : 'text-sm'}
+                        fullWidth={true}
+                    >
+                        Resume
+                    </Button>
+                </a>
             </ul>
         </>
     )

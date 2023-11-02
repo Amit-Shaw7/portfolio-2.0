@@ -23,11 +23,14 @@ const Hero = (props: Props) => {
           </p>
         </div>
 
-        <Button
-          size='large'
-          title='Get in touch'
-          fullWidth={false}
-        />
+        <a href="#contact" className='h-full w-full'>
+          <Button
+            size='large'
+            fullWidth={false}
+          >
+            Get in touch
+          </Button>
+        </a>
       </div>
     </section>
   )
