@@ -26,7 +26,7 @@ const Project = (props: Props) => {
                         className='
                             opacity-40 
                             hover:opacity-0 
-                            bg-highlight 
+                            bg-primary 
                             rounded-sm
                         '
                     />
@@ -49,7 +49,7 @@ const Project = (props: Props) => {
                     <div className='h-full w-full flex flex-col  justify-between'>
                         {/* Heading and Project name */}
                         <div className={`w-full ${props.index % 2 === 0 ? "text-right" : "text-left"}`}>
-                            <h5 className='text-highlight font-semibold font-roboto'>Featured Project</h5>
+                            <h5 className='text-primary font-semibold font-roboto'>Featured Project</h5>
                             <h3 className='text-unselected text-3xl font-bold'>{props.project.title}</h3>
                         </div>
 
@@ -142,7 +142,7 @@ const Project = (props: Props) => {
 
                         <div className='p-4 sm:p-12 justify-around flex gap-5 flex-col  min-h-[400px]'>
                             <div className='flex flex-col gap-3'>
-                                <h5 className='text-highlight font-semibold font-roboto'>Featured Project</h5>
+                                <h5 className='text-primary font-semibold font-roboto'>Featured Project</h5>
                                 <h3 className='text-white text-3xl font-bold'>{props.project.title}</h3>
                             </div>
 

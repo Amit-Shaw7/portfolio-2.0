@@ -15,13 +15,13 @@ const Tab = (props: Props) => {
                 px-4 
                 py-2 
                  cursor-pointer
-                ${props.selected ? "border-b-2 border-b-highlight md:border-b-0 md:border-l-2 md:border-l-highlight" : "border-b-2 md:border-l-2 md:border-b-0 border-b-gray md:border-l-gray"} 
-                hover:bg-highlight 
+                ${props.selected ? "border-b-2 border-b-primary md:border-b-0 md:border-l-2 md:border-l-primary" : "border-b-2 md:border-l-2 md:border-b-0 border-b-gray md:border-l-gray"} 
+                hover:bg-primary 
                 hover:bg-opacity-10 
                 transition 
                 duration-700
                 w-max
-                ${props.selected ? "text-highlight" :"text-gray"}
+                ${props.selected ? "text-primary" :"text-gray"}
             `}
         >
             <p className='flex'>{props.label}</p>

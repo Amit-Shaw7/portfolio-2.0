@@ -16,7 +16,7 @@ const Icon = (props: Props) => {
             href={props.href}
             className={`
                 text-unselected 
-                hover:text-highlight 
+                hover:text-primary 
                 transition 
                 duration-300 
                 hover:-translate-y-1

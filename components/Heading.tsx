@@ -9,7 +9,7 @@ const Heading = (props: Props) => {
     return (
         <div className='flex items-center gap-5 mb-20'>
             <h4 className='text-2xl  font-bold font-nunito text-white '>
-                <span className='text-highlight'>0{props.index}.</span>
+                <span className='text-primary'>0{props.index}.</span>
                 &nbsp;
                 {props.title}
             </h4>

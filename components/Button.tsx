@@ -11,19 +11,19 @@ type Props = {
 const Button = ({ fullWidth, fontSize, px , size , children }: Props) => {
     return (
         <div className={`
-            bg-highlight 
+            bg-primary 
             rounded-md
             w-fit
         `}>
             <button
                 className={`
-                bg-primary 
+                bg-bg 
                 py-2  
                 rounded-md 
                 border 
                 font-roboto
-                border-highlight 
-                text-highlight 
+                border-primary 
+                text-primary 
                 hover:-translate-x-1
                 hover:-translate-y-1
                 transition-all

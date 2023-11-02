@@ -50,7 +50,7 @@ const Navbar = (props: Props) => {
                 bg-transparent
                 text-unselected
                 ${scrolled ? 'h-[60px]' : 'h-[100px]'} 
-                ${scrolled ? 'shadow-sm shadow-highlight-200/10' : 'h-[100px]'} 
+                ${scrolled ? 'shadow-sm shadow-primary-200/10' : 'h-[100px]'} 
             `}>
                 <Logo scrolled={scrolled} />
                 <div className='hidden md:flex'>

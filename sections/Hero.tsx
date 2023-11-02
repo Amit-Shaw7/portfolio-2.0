@@ -8,7 +8,7 @@ const Hero = (props: Props) => {
     <section id="#home" className='h-[80vh]'>
       <div className="w-full py-4 font-nunito">
         <div className='w-full'>
-          <p className='text-xl text-highlight font-roboto'>Hii , I am</p>
+          <p className='text-xl text-primary font-roboto'>Hii , I am</p>
           <p className='text-4xl md:text-5xl lg:text-5xl xl:text-7xl font-bold mt-5'>Amit Kumar Shaw</p>
           <p className='text-4xl md:text-5xl lg:text-5xl xl:text-7xl text-unselected font-bold text-unselecteds mt-4'>I build things for the web.</p>
         </div>

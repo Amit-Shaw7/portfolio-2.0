@@ -13,7 +13,7 @@ const WorkDetails = (props: Props) => {
             <div className='flex flex-col gap-2'>
                 <h3 className='text-2xl'>
                     <span className='text-white'>{data?.jobTitle}</span>
-                    <span className='text-highlight'> @ {data?.org}</span>
+                    <span className='text-primary'> @ {data?.org}</span>
                 </h3>
                 <h6 className='text-gray'>{data?.startDate} - {data?.endDate}</h6>
             </div>

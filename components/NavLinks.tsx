@@ -31,11 +31,11 @@ const NavLinks = (props: Props) => {
                                 href={navItem.href}
                                 className='flex gap-1'
                             >
-                                <span className='text-highlight-200'>
+                                <span className='text-primary'>
                                     0{Number(idx + 1)}.
                                 </span>
 
-                                <span className='tracking-wide hover:text-highlight-200'>
+                                <span className='tracking-wide hover:text-primary'>
                                     {navItem.title}
                                 </span>
                             </a>

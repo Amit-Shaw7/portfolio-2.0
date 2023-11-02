@@ -20,9 +20,9 @@ const MobileNavbar = (props: Props) => {
           h-full 
           w-[400px] 
           md:hidden 
-          bg-primary 
+          bg-bg 
           shadow-lg 
-          shadow-highlight 
+          shadow-primary 
           transform 
           transition-transform 
           duration-300 

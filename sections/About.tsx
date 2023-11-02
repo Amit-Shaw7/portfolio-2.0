@@ -11,17 +11,17 @@ const About = () => {
         <div className='w-full md:w-[60%] lg:w-[60%] flex flex-col gap-7'>
           <p className='text-slate-400 text-md font-nunito leading-7'>
             Hi, I&apos;m Amit Kumar Shaw, and I am a
-            <span className='text-highlight font-semibold'> Full Stack Web Developer</span>.
+            <span className='text-primary font-semibold'> Full Stack Web Developer</span>.
             I mostly focus on
-            <span className='text-highlight font-semibold'> React Js</span>,
+            <span className='text-primary font-semibold'> React Js</span>,
             which is a part of a group of tools in
-            <span className='text-highlight font-semibold'> MERN Stack</span>,
+            <span className='text-primary font-semibold'> MERN Stack</span>,
             and I also know a bit about
-            <span className='text-highlight font-semibold'> Next Js</span>.
+            <span className='text-primary font-semibold'> Next Js</span>.
             I finished my BCA (that&apos;s
-            <span className='text-highlight font-semibold'> Bachelor of Computer Applications) </span>
+            <span className='text-primary font-semibold'> Bachelor of Computer Applications) </span>
             at Heritage Academy in 2022 with a grade of
-            <span className='text-highlight font-semibold'> 9.0</span>.
+            <span className='text-primary font-semibold'> 9.0</span>.
           </p>
 
           <p className='text-slate-400 text-md font-nunito leading-7'>
@@ -46,7 +46,7 @@ const About = () => {
                 hover:opacity-0 
                 hover:-translate-x-1 
                 hover:-translate-y-1 
-                bg-highlight 
+                bg-primary 
                 rounded-sm
               '
             />
@@ -58,7 +58,7 @@ const About = () => {
                 w-full 
                 h-full 
                 border 
-                border-highlight-200 
+                border-primary 
                 rounded-sm
                 peer-hover:translate-x-1 
                 peer-hover:translate-y-1 

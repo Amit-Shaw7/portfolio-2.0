@@ -15,11 +15,7 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors:{
-        'primary': '#0F172A',
-        'overlay' : "#62EBCF",
-        'highlight' : "#5ADFCB",
-        'highlight-100' : "#64FFDA",
-        'highlight-200' : "#5FF2D1",
+        'primary': '#5ADFCB',
         'bg' : "#0A192F",
         'card' : "#112240",
         "disabled" : "#6E7996",
