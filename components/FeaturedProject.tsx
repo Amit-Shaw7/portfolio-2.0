@@ -48,14 +48,13 @@ const Project = (props: Props) => {
                 <div className={`font-nunito w-[40%] rounded-md ${props.index % 2 === 0 ? "-ml-10" : "-mr-10"} relative z-20 py-5`}>
                     <div className='h-full w-full flex flex-col  justify-between'>
                         {/* Heading and Project name */}
-                        <div aria-label='heading-and-project-name' className={`w-full ${props.index % 2 === 0 ? "text-right" : "text-left"}`}>
+                        <div className={`w-full ${props.index % 2 === 0 ? "text-right" : "text-left"}`}>
                             <h5 className='text-highlight font-semibold font-roboto'>Featured Project</h5>
                             <h3 className='text-unselected text-3xl font-bold'>{props.project.title}</h3>
                         </div>
 
                         {/* Project description card */}
                         <div
-                            aria-label='project-description'
                             className='text-sm w-full bg-card hover:shadow-md transition duration-300 z-30 p-3 rounded-md'
                         >
                             <p
@@ -71,7 +70,6 @@ const Project = (props: Props) => {
 
                         {/* Technologies used */}
                         <div
-                            aria-label='technologies-used'
                             className={` 
                             flex 
                             items-center 
@@ -93,7 +91,6 @@ const Project = (props: Props) => {
 
                         {/* Link */}
                         <div
-                            aria-label='link'
                             className={`
                             flex 
                             items-center 

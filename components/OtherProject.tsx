@@ -22,11 +22,13 @@ const OtherProject = (props: Props) => {
                 <FiFolder className="text-highlight text-5xl font-extralight" />
                 <div className='flex items-center gap-5'>
                     <Icon
+                        size='medium'
                         href={props.project.githubURL}
                         icon={FiGithub}
                         target='_blank'
                     />
                     <Icon
+                        size='medium'
                         href={props.project.siteURL}
                         icon={FiExternalLink}
                         target='_blank'
