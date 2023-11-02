@@ -1,13 +1,13 @@
 import { socialLinks } from '@/constants/socialLinks'
 import React from 'react'
 import Icon from './Icon';
+import { myGmail } from '@/constants/email';
 
 const Wrapper = ({
     children
 }: {
     children: React.ReactNode
 }) => {
-    const email = "amitkumar8017392@gmail.com";
     return (
         <div className='w-full mt-[130px] sm:mt-[150px]'>
             {/* -------------------------- left side social links -------------------------- */}
@@ -50,9 +50,9 @@ const Wrapper = ({
             >
                 <a
                     className='text-vertical text-xs font-roboto text-unselected font-lighter tracking-[3px]'
-                    href="mailto:amitkumar8017392@gmail.com"
+                    href={`mailto:${myGmail}`}
                 >
-                    {email}
+                    {myGmail}
                 </a>
                 <div className='h-24 w-[1px] bg-unselected'></div>
             </div>

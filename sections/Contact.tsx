@@ -1,5 +1,6 @@
 import Button from '@/components/Button'
 import Heading from '@/components/Heading'
+import { myGmail } from '@/constants/email'
 import React from 'react'
 
 const Contact = () => {
@@ -13,7 +14,7 @@ const Contact = () => {
                     you can contact me through mail by clicking the button below.
                 </p>
 
-                <a href='mailto:amitkumar8017392@gmail.com'>
+                <a href={`mailto:${myGmail}`}>
                     <Button size='large' >
                         Say Hii
                     </Button>
