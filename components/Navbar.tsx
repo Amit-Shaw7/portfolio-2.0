@@ -1,14 +1,11 @@
-"use client";
+'use client';
 import React, { useState, useEffect } from 'react'
 import NavLinks from './NavLinks'
 import Logo from './Logo'
 import MobileNavbar from './MobileNavbar'
 import { MdMenu } from 'react-icons/md'
 
-
-type Props = {}
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [open, setOpen] = useState(false);
 
@@ -52,7 +49,7 @@ const Navbar = (props: Props) => {
                 ${scrolled ? 'h-[60px]' : 'h-[100px]'} 
                 ${scrolled ? 'shadow-sm shadow-primary-200/10' : 'h-[100px]'} 
             `}>
-                <Logo scrolled={scrolled} />
+                <Logo />
                 <div className='hidden md:flex'>
                     <NavLinks
                         mobileView={false}

@@ -1,6 +1,7 @@
-import { navLinks } from '@/constants/navLinks'
 import React from 'react'
 import Button from './Button'
+import { navLinks } from '@/constants/navLinks'
+import { motion } from 'framer-motion'
 
 type Props = {
     mobileView: boolean
@@ -23,7 +24,10 @@ const NavLinks = (props: Props) => {
                 `}>
                 {
                     navLinks?.map((navItem, idx) => (
-                        <li
+                        <motion.li
+                            initial={{ y: -10, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.3, delay: idx / 10 + 0.1 }}
                             key={navItem.title}
                             className='p-1'
                         >
@@ -39,18 +43,24 @@ const NavLinks = (props: Props) => {
                                     {navItem.title}
                                 </span>
                             </a>
-                        </li>
+                        </motion.li>
                     ))
                 }
 
-                <a download href='/assets/amitKumarShawResume.pdf'>
+                <motion.a
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.7, duration: 0.3 }}
+                    download
+                    href='/assets/amitKumarShawResume.pdf'
+                >
                     <Button
                         fontSize={props.mobileView ? '1rem' : 'text-sm'}
                         fullWidth={true}
                     >
                         Resume
                     </Button>
-                </a>
+                </motion.a>
             </ul>
         </>
     )
