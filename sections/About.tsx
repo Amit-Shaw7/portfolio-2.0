@@ -1,11 +1,31 @@
+'use client';
+import React, { useEffect, useRef } from 'react'
+import Image from 'next/image'
 import Heading from '@/components/Heading'
 import Overlay from '@/components/Overlay'
-import Image from 'next/image'
-import React from 'react'
+import { motion, AnimatePresence, useInView } from 'framer-motion'
+import { base, finalOpacity, finalY, initialOpacity, initialYMaxFromTop } from '@/constants/framerMotionConfig';
 
 const About = () => {
+
   return (
-    <section id="about" className='py-20'>
+    <motion.section
+      initial={{
+        opacity: initialOpacity,
+        y: initialYMaxFromTop,
+      }}
+      whileInView={{
+        opacity: finalOpacity,
+        y: finalY,
+      }}
+      transition={{
+        duration: base,
+        delay: 0.1
+      }}
+      viewport={{ once: true }}
+      id="about"
+      className='mt-10 py-20'
+    >
       <Heading index={1} title='About' />
       <div className='px-4 flex justify-between md:flex-row flex-col gap-5 w-full h-auto'>
         <div className='w-full md:w-[60%] lg:w-[60%] flex flex-col gap-7'>
@@ -25,13 +45,13 @@ const About = () => {
           </p>
 
           <p className='text-slate-400 text-md font-nunito leading-7'>
-            I really like making things for the internet. 
-            I&apos;ve been learning how to build websites and web apps for a while now. 
+            I really like making things for the internet.
+            I&apos;ve been learning how to build websites and web apps for a while now.
             I find it interesting and enjoy making web pages that look good and work well for the people who use them.
           </p>
 
           <p className='text-slate-400 text-md font-nunito leading-7'>
-            I&apos;m good at building cool stuffs, and working with other people to finish projects. 
+            I&apos;m good at building cool stuffs, and working with other people to finish projects.
             I&apos;m always trying to learn new stuff in web development because things change quickly and I want to stay up to date.
             I&apos;m excited about building things for the web and I&apos;m always ready for new challenges in making things for the web.
           </p>
@@ -83,7 +103,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

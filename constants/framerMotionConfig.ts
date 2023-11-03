@@ -13,4 +13,8 @@ export const finalX: number = 0
 export const initialYMin: number = -30
 export const initialYBase: number = -40
 export const initialYMax: number = -50
+
+export const initialYMinFromTop: number = 30
+export const initialYBaseFromTop: number = 40
+export const initialYMaxFromTop: number = 50
 export const finalY: number = 0
