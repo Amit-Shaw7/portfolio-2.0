@@ -24,7 +24,7 @@ const About = () => {
       }}
       viewport={{ once: true }}
       id="about"
-      className='mt-10 py-20'
+      className='py-20'
     >
       <Heading index={1} title='About' />
       <div className='px-4 flex justify-between md:flex-row flex-col gap-5 w-full h-auto'>

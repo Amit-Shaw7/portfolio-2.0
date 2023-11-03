@@ -8,6 +8,10 @@ export const fast: number = 0.3
 export const initialXMin: number = -30
 export const initialXBase: number = -40
 export const initialXMax: number = -50
+
+export const initialXMinRight: number = 30
+export const initialXBaseRight: number = 40
+export const initialXMaxRight: number = 50
 export const finalX: number = 0
 
 export const initialYMin: number = -30

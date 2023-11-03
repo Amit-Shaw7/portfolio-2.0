@@ -1,10 +1,12 @@
 "use client";
+import React, { useState } from 'react'
 import Heading from '@/components/Heading'
 import WorkDetails from '@/components/WorkDetails';
 import Tab from '@/components/tabs/Tab'
 import Tabs from '@/components/tabs/Tabs'
 import { works } from '@/constants/works';
-import React, { useState } from 'react'
+import {motion} from 'framer-motion'
+import { base, finalOpacity, finalY, initialOpacity, initialYMaxFromTop } from '@/constants/framerMotionConfig';
 
 const Work = () => {
     const [selectedTab, setSelectedTab] = useState(works[0].org);
@@ -12,7 +14,23 @@ const Work = () => {
         setSelectedTab(value);
     }
     return (
-        <section id='work' className='py-20'>
+        <motion.section
+            initial={{
+                opacity: initialOpacity,
+                y: initialYMaxFromTop,
+            }}
+            whileInView={{
+                opacity: finalOpacity,
+                y: finalY,
+            }}
+            transition={{
+                duration: base,
+                delay: 0.1
+            }}
+            viewport={{ once: true }}
+            id='work'
+            className='py-20'
+        >
             <Heading title="Where I've Worked" index={5} />
 
             <div className='px-4 flex md:flex-row flex-col gap-8 w-full min-h-[50vh] md:min-h-full'>
@@ -36,7 +54,7 @@ const Work = () => {
                     <WorkDetails company={selectedTab} />
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

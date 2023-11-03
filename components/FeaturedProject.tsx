@@ -1,9 +1,11 @@
-import Image from 'next/image'
 import React from 'react'
+import Image from 'next/image'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import TechnologiesUsed from './TechnologiesUsed'
 import Overlay from './Overlay'
 import Icon from './Icon'
+import { motion } from 'framer-motion'
+import { base, finalOpacity, finalX, initialOpacity, initialXMax, initialXMaxRight, initialYMaxFromTop } from '@/constants/framerMotionConfig'
 
 type Props = {
     index: number,
@@ -20,8 +22,30 @@ type Props = {
 const Project = (props: Props) => {
     return (
         <>
-            <div key={props.index} className={`md:flex hidden ${props.index % 2 === 0 ? "flex-row" : "flex-row-reverse"} h-[350px]`}>
-                <div className='relative flex items-center justify-center h-[340px] w-[60%]'>
+            <div
+                className={`
+                    md:flex
+                    hidden 
+                    ${props.index % 2 === 0 ? "flex-row" : "flex-row-reverse"} 
+                    h-[350px]
+                `}
+            >
+                <motion.div
+                    initial={{
+                        opacity: initialOpacity,
+                        x: initialXMax,
+                    }}
+                    whileInView={{
+                        opacity: finalOpacity,
+                        x: finalX,
+                    }}
+                    transition={{
+                        duration: base,
+                        delay: 0.1
+                    }}
+                    viewport={{ once: true }}
+                    className='relative flex items-center justify-center h-[340px] w-[60%]'
+                >
                     <Overlay
                         className='
                             opacity-40 
@@ -43,9 +67,32 @@ const Project = (props: Props) => {
                             object-cover
                         '
                     />
-                </div>
+                </motion.div>
 
-                <div className={`font-nunito w-[40%] rounded-md ${props.index % 2 === 0 ? "-ml-10" : "-mr-10"} relative z-20 py-5`}>
+                <motion.div
+                    initial={{
+                        opacity: initialOpacity,
+                        x: initialXMaxRight,
+                    }}
+                    whileInView={{
+                        opacity: finalOpacity,
+                        x: finalX,
+                    }}
+                    transition={{
+                        duration: base,
+                        delay: 0.1
+                    }}
+                    viewport={{ once: true }}
+                    className={`
+                        font-nunito 
+                        w-[40%] 
+                        rounded-md 
+                        ${props.index % 2 === 0 ? "-ml-10" : "-mr-10"} 
+                        relative 
+                        z-20 
+                        py-5
+                    `}
+                >
                     <div className='h-full w-full flex flex-col  justify-between'>
                         {/* Heading and Project name */}
                         <div className={`w-full ${props.index % 2 === 0 ? "text-right" : "text-left"}`}>
@@ -113,10 +160,12 @@ const Project = (props: Props) => {
                             />
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
 
-            <div className='relative flex md:hidden p-2 sm:p-3 w-[100%] shadow-lg h-auto'>
+            <motion.div
+                className='relative flex md:hidden p-2 sm:p-3 w-[100%] shadow-lg h-auto'
+            >
                 <div className='h-full w-full rounded-sm shadow-xl'>
                     <div className='relative h-[400px]'>
                         <Image
@@ -170,7 +219,7 @@ const Project = (props: Props) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

@@ -26,10 +26,11 @@ const MobileNavbar = (props: Props) => {
           transform 
           transition-transform 
           duration-300 
+          z-50
           ${props.open ? 'translate-x-0' : '-translate-x-full'}
       `}>
         <div className='flex items-center justify-between py-4 px-6'>
-          <Logo scrolled={props.scrolled} />
+          <Logo />
           <div
             onClick={props.handleMenuClose}
             id="close-menu-btn"
