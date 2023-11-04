@@ -18,7 +18,7 @@ const MobileNavbar = (props: Props) => {
           top-0 
           left-[-10px] 
           h-full 
-          w-[400px] 
+          w-full 
           md:hidden 
           bg-bg 
           shadow-lg 
@@ -40,7 +40,7 @@ const MobileNavbar = (props: Props) => {
         </div>
 
         <div className='flex md:hidden items-start justify-center'>
-          <NavLinks mobileView={true} />
+          <NavLinks handleClose={props.handleMenuClose} mobileView={true} />
         </div>
       </div>
     </>

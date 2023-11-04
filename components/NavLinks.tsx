@@ -4,7 +4,8 @@ import { navLinks } from '@/constants/navLinks'
 import { motion } from 'framer-motion'
 
 type Props = {
-    mobileView: boolean
+    mobileView: boolean,
+    handleClose : () => void
 }
 
 const NavLinks = (props: Props) => {
@@ -25,6 +26,7 @@ const NavLinks = (props: Props) => {
                 {
                     navLinks?.map((navItem, idx) => (
                         <motion.li
+                            onClick={props.handleClose}
                             initial={{ y: -10, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.3, delay: idx / 10 + 0.1 }}
@@ -47,20 +49,24 @@ const NavLinks = (props: Props) => {
                     ))
                 }
 
-                <motion.a
+                <motion.li
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.7, duration: 0.3 }}
-                    download
-                    href='/assets/amitKumarShawResume.pdf'
+                    className='p-1'
                 >
-                    <Button
-                        fontSize={props.mobileView ? '1rem' : 'text-sm'}
-                        fullWidth={true}
+                    <a
+                        download
+                        href='/assets/amitKumarShawResume.pdf'
                     >
-                        Resume
-                    </Button>
-                </motion.a>
+                        <Button
+                            fontSize={props.mobileView ? '1rem' : 'text-sm'}
+                            fullWidth={true}
+                        >
+                            Resume
+                        </Button>
+                    </a>
+                </motion.li>
             </ul>
         </>
     )

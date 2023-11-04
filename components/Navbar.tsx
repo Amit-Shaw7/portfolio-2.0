@@ -52,6 +52,7 @@ const Navbar = () => {
                 <Logo />
                 <div className='hidden md:flex'>
                     <NavLinks
+                        handleClose={() => { }}
                         mobileView={false}
                     />
                 </div>

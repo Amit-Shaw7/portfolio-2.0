@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar'
 export const metadata: Metadata = {
   title: 'Amit',
   description: 'A fullstack web developer',
+  manifest: '/manifest.json'
 }
 
 export default function RootLayout({

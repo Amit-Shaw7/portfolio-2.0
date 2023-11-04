@@ -9,7 +9,7 @@ const Logo = () => {
     return (
         <Link
             id="logo"
-            className='w-max'
+            className='w-max relative z-50'
             href="/"
         >
             <motion.div
@@ -29,7 +29,7 @@ const Logo = () => {
                     width={50}
                     height={50}
                     src="/logo/logo.png"
-                    alt="logo"
+                    alt="website logo"
                 />
             </motion.div>
         </Link>

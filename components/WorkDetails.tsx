@@ -15,7 +15,7 @@ const WorkDetails = (props: Props) => {
                     <span className='text-white'>{data?.jobTitle}</span>
                     <span className='text-primary'> @ {data?.org}</span>
                 </h3>
-                <h6 className='text-gray'>{data?.startDate} - {data?.endDate}</h6>
+                <span className='text-gray'>{data?.startDate} - {data?.endDate}</span>
             </div>
 
             <ul className='ml-4 list-disc flex flex-col gap-2 text-unselected justify-start items-start text-md'>

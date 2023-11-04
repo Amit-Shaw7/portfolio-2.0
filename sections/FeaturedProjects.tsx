@@ -26,7 +26,7 @@ const Projects = () => {
             className='py-20 w-full'
         >
             <Heading title="Thing's I've built" index={3} />
-            <div className='flex justify-center flex-col gap-32'>
+            <div className='flex justify-center flex-col gap-10 md:gap-32'>
                 {
                     featuredProjects.map((project, index) => (
                         <FeaturedProject

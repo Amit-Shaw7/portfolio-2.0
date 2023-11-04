@@ -6,7 +6,8 @@ type Props = {
     icon: IconType,
     href: string,
     target?: '_blank' | '_parent' | '_self' | '_top',
-    size: 'small' | 'medium' | 'large'
+    size: 'small' | 'medium' | 'large',
+    label : string,
 }
 
 const Icon = (props: Props) => {
@@ -26,6 +27,7 @@ const Icon = (props: Props) => {
                 className={`
                     ${props.size === 'small' ? 'text-sm' : props.size === 'medium' ? 'text-md' : 'text-xl'}
                 `}
+                aria-label={props.label ? props.label : ''}
             />
         </a>
     )

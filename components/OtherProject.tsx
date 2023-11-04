@@ -44,12 +44,14 @@ const OtherProject = (props: Props) => {
                         href={props.project.githubURL}
                         icon={FiGithub}
                         target='_blank'
+                        label='Github'
                     />
                     <Icon
                         size='medium'
                         href={props.project.siteURL}
                         icon={FiExternalLink}
                         target='_blank'
+                        label='Website'
                     />
                 </div>
             </div>

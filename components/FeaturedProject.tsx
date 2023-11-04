@@ -97,7 +97,7 @@ const Project = (props: Props) => {
                         {/* Heading and Project name */}
                         <div className={`w-full ${props.index % 2 === 0 ? "text-right" : "text-left"}`}>
                             <h5 className='text-primary font-semibold font-roboto'>Featured Project</h5>
-                            <h3 className='text-unselected text-3xl font-bold'>{props.project.title}</h3>
+                            <h6 className='text-unselected text-3xl font-bold'>{props.project.title}</h6>
                         </div>
 
                         {/* Project description card */}
@@ -151,12 +151,14 @@ const Project = (props: Props) => {
                                 href={props.project.githubURL}
                                 target='_blank'
                                 icon={FiGithub}
+                                label="Github"
                             />
                             <Icon
                                 size='medium'
                                 href={props.project.siteURL}
                                 target='_blank'
                                 icon={FiExternalLink}
+                                label='Website'
                             />
                         </div>
                     </div>
@@ -167,7 +169,7 @@ const Project = (props: Props) => {
                 className='relative flex md:hidden p-2 sm:p-3 w-[100%] shadow-lg h-auto'
             >
                 <div className='h-full w-full rounded-sm shadow-xl'>
-                    <div className='relative h-[400px]'>
+                    <div className='relative h-[420px]'>
                         <Image
                             src={`/assets/projects/${props.project.img}`}
                             alt={props.project.title}
@@ -189,10 +191,10 @@ const Project = (props: Props) => {
                         '
                     >
 
-                        <div className='p-4 sm:p-12 justify-around flex gap-5 flex-col  min-h-[400px]'>
+                        <div className='p-4 sm:p-12 justify-around flex gap-5 flex-col  min-h-[420px]'>
                             <div className='flex flex-col gap-3'>
-                                <h5 className='text-primary font-semibold font-roboto'>Featured Project</h5>
-                                <h3 className='text-white text-3xl font-bold'>{props.project.title}</h3>
+                                <h4 className='text-primary font-semibold font-roboto'>Featured Project</h4>
+                                <h5 className='text-white text-3xl font-bold'>{props.project.title}</h5>
                             </div>
 
                             <p className='text-white text-md'>
@@ -208,12 +210,14 @@ const Project = (props: Props) => {
                                     href={props.project.githubURL}
                                     target='_blank'
                                     icon={FiGithub}
+                                    label='Github'
                                 />
                                 <Icon
                                     size='medium'
                                     href={props.project.siteURL}
                                     target='_blank'
                                     icon={FiExternalLink}
+                                    label='Website'
                                 />
                             </div>
                         </div>

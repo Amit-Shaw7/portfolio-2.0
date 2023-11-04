@@ -30,6 +30,7 @@ const LeftSocialLinks = () => {
                             href={item.url}
                             icon={item.icon}
                             target='_blank'
+                            label={item.name}
                         />
                     ))
                 }
