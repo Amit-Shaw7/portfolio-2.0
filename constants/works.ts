@@ -12,16 +12,16 @@ export const works = [
             "Resposible for building the whole product from scratch."
         ]
     },
-    {
-        jobTitle: "Fullstack Web Developer Intern + Training",
-        technologiesUsed: ["react", "scss", "nodejs", "expressjs", "mongodb"],
-        startDate: "Jan 2022",
-        endDate: "Current",
-        org: "Ardent Computech pvt lmt",
-        responsibilities: [
-            "Build the frontend part of Food Ordering Website using React js and SCSS",
-            "Build the backend the app using Node.js and Express.js",
-            "Added admin uthentication with simple admin dashboard",
-        ]
-    },
+    // {
+    //     jobTitle: "Fullstack Web Developer Intern + Training",
+    //     technologiesUsed: ["react", "scss", "nodejs", "expressjs", "mongodb"],
+    //     startDate: "Jan 2022",
+    //     endDate: "Current",
+    //     org: "Ardent Computech pvt lmt",
+    //     responsibilities: [
+    //         "Build the frontend part of Food Ordering Website using React js and SCSS",
+    //         "Build the backend the app using Node.js and Express.js",
+    //         "Added admin uthentication with simple admin dashboard",
+    //     ]
+    // },
 ]
