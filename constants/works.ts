@@ -9,6 +9,7 @@ export const works = [
             "Developed UI components using MUI and React.",
             "Contributed in backend apis using Node.js and Express.js.",
             "Build complete flow for our user to authenticate using Oauth and add credentials to fetch thier Google Analytics and Google Search Console data.",
+            "Also integrated with shopify apis",
             "Resposible for building the whole product from scratch."
         ]
     },
