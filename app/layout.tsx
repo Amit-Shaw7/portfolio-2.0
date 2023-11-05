@@ -3,9 +3,9 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 
 export const metadata: Metadata = {
-  title: 'Amit',
-  description: 'A fullstack web developer',
-  manifest: '/manifest.json'
+  title: 'Amit - A Full Stack Web Developer',
+  description: 'A fullstack web developer skilled in MERN Stack stands for MongoDb , Express Js , React Js , Node Js. He knows how to build responsive things for the web. ',
+  manifest: '/manifest.json',
 }
 
 export default function RootLayout({
