@@ -56,8 +56,9 @@ const NavLinks = (props: Props) => {
                     className='p-1'
                 >
                     <a
-                        download
-                        href='/assets/amitKumarShawResume.pdf'
+                        // download
+                        href='/amitKumarShawResume.pdf'
+                        target='_blank'
                     >
                         <Button
                             fontSize={props.mobileView ? '1rem' : 'text-sm'}
