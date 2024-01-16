@@ -1,9 +1,9 @@
 export const works = [
     {
-        jobTitle: "Frontend End Web Developer Intern",
+        jobTitle: "Software Developer Intern",
         technologiesUsed: ["react", "mui", "nodejs", "expressjs", "mongodb"],
-        startDate: "Jan 2022",
-        endDate: "Current",
+        startDate: "Jan 2023",
+        endDate: "Dec 2023",
         org: "The Mango Jelly",
         responsibilities: [
             "Developed UI components using MUI and React.",
