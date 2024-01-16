@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+<h1 align="center">
+  <br>
+  <a href="https://amitshawv2.vercel.app/"><img src="https://res.cloudinary.com/amitkumarshaw/image/upload/v1699199773/nkzq41p8idzormqkchoy.png" alt="managet" width="200"></a>
+  <br>
+  Origin Ai
+  <br>
+</h1>
 
-First, run the development server:
+<h4 align="center">My Portfolio</h4>
+
+<p align="center">
+  <a href="https://nextjs.org/" >
+    <img width="20px" src="https://amitshawv2.vercel.app/assets/skills/next.svg" alt="Next js">
+  </a>
+  
+  <a href="https://tailwindcss.com/">
+      <img height="20px" src="https://amitshawv2.vercel.app/assets/skills/tailwind.svg" alt="tailwind css">
+  </a>
+
+</p>
+
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#related">Related</a> •
+  <a href="#license">License</a>
+</p>
+
+<hr/>
+
+## Key Features
+
+* Beautiful scalable ui.
+* Fully responsive.
+
+## How to run in your system
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone this repository
+$ git clone ...
+
+# Go into the frontend
+$ cd portfolio-2.0
+
+# Install dependencies
+$ npm install
+
+# Run the app
+
+$ npm run dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Credits
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This web app uses the following technologies:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Node.js](https://nodejs.org/)
+- [Next.js ](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer motion](https://www.framer.com/motion/)
 
-## Learn More
+This web app uses the following important npm packages:
 
-To learn more about Next.js, take a look at the following resources:
+- [react-icons](https://react-icons.github.io/react-icons/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Related
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[Portfolio](https://amitshawv2.vercel.app/) - Deployed version this web app.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## You may also like...
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Youtube Clone](https://github.com/Amit-Shaw7/yt-clone-frontend) - A youtube clone.
+- [Pijja](https://github.com/Amit-Shaw7/pizzaApp---Frontend) - A dummy pizza ordering webapp
+- [Connect](https://github.com/Amit-Shaw7/connect) - A social media web app
+- [Origin AI](https://github.com/Amit-Shaw7/saas-ai) - An ai tool like chatgpt
+- [Managet](https://github.com/Amit-Shaw7/kanban-task-management) - A Task management web app with drag and drop feature
+
+## License
+
+MIT
+
+---
+
+> [Amit Shaw](https://amitshawv2.vercel.app) &nbsp;&middot;&nbsp;
+> GitHub [Amit-Shaw7](https://github.com/Amit-Shaw7) &nbsp;&middot;&nbsp;
+> LinkedIn [amit-shaw-a95121230](https://www.linkedin.com/in/amit-shaw-a95121230/)
+
