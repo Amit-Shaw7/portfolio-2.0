@@ -33,7 +33,7 @@ const Work = () => {
         >
             <Heading title="Where I've Worked" index={5} />
 
-            <div className='px-4 flex md:flex-row flex-col gap-8 w-full h-auto md:h-[50vh] overflow-y-scroll'>
+            <div className='px-4 flex md:flex-row flex-col gap-8 w-full h-auto md:h-[50vh] overflow-y-scroll scrollbar-none'>
                 <div className='md:w-[300px] w-full'>
                     <Tabs>
                         {
