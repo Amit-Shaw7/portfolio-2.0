@@ -44,6 +44,10 @@ body,
   background: #505D77;
 }
 
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
 .text-vertical {
   writing-mode: vertical-rl;
   text-orientation: mixed;

@@ -7,7 +7,7 @@ import { initialOpacity, finalOpacity, initialXMin, finalX, base } from '@/const
 const Hero = () => {
   return (
     <section id='#home' className='h-[80vh]'>
-      <div className='w-full py-4 font-nunito'>
+      <div className='w-full py-4 font-nunito px-2 md:px-0'>
         <motion.div
           initial={{
             x: initialXMin,

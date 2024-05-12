@@ -25,7 +25,7 @@ const Contact = () => {
             id='contact'
             className='py-20'
         >
-            <Heading title="What's Next?" index={5} />
+            <Heading title="What's Next?" index={6} />
             <div className='flex items-center flex-col gap-7'>
                 <h3 className='text-3xl md:text-5xl font-extrabold text-primary font-roboto'>Get in Touch</h3>
                 <p className='text-lg text-center text-unselected font-nunito py-5 px-2 md:px-32'>
