@@ -22,7 +22,7 @@ export const featuredProjects = [
         title: "Connect",
         desc: "A Fullstack social media web app build using MERN Stack and Mui. It has feature like add , update , delete , like , dislike  post comment. It also has stories feature with autodelete in 24hrs , proper user authentication , infinite scroll , light and dark mode and many more.",
         img: "connect.jpg",
-        skillUsed: ["react", "mui", "nodejs", "expressjs", "mongoDB"],
+        skillUsed: ["react", "mui", "nodejs", "expressjs", "mongodb"],
         githubURL: "https://github.com/Amit-Shaw7/connect",
         siteURL: "https://connnect.vercel.app/",
     },

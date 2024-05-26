@@ -19,7 +19,7 @@ export const otherProjects = [
         title: "Task management app",
         desc: "Keep track of tasks in three stages 'Todo' , 'Doing' and 'Done'. Change their status when their status changes with a simple drag and drop. Toggle dark and light mode according to your need.",
         img: "managet.jpg",
-        skillUsed: ["react", "tailwind", "nodejs", "expressjs", "mongoDB"],
+        skillUsed: ["react", "tailwind", "nodejs", "expressjs", "mongodb"],
         githubURL: "https://github.com/Amit-Shaw7/kanban-task-management",
         siteURL: "https://managet.vercel.app",
     },
